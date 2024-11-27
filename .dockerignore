@@ -1,8 +1,12 @@
 **/.idea
 **/.git
 **/vendor
-./var/*
-!./var/.gitignore
+./var/cache/*
+!./var/cache/.gitignore
+./var/db/*
+!./var/db/.gitignore
+./var/logs/*
+!./var/logs/.gitignore
 .phpunit.result.cache
 frontend/.nuxt
 frontend/node_modules

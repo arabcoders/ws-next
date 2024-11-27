@@ -4,3 +4,9 @@
 /.phpunit.result.cache
 /.vscode
 /frontend/node_modules/*
+/var/cache/*
+!/var/cache/.gitignore
+/var/db/*
+!/var/db/.gitignore
+/var/logs/*
+!/var/logs/.gitignore
