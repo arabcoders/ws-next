@@ -1,0 +1,6 @@
+/.idea/*
+/vendor/*
+/.env
+/.phpunit.result.cache
+/.vscode
+/frontend/node_modules/*
