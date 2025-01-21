@@ -194,7 +194,8 @@ jobs:
     runs-on: ubuntu-latest
     # Example condition: run only if this is the default branch, or
     # if triggered manually with input "create_release".
-    if: (endsWith(github.ref, github.event.repository.default_branch) && success()) || (github.event_name == 'workflow_dispatch' && github.event.inputs.create_release == 'true')
+    #if: (endsWith(github.ref, github.event.repository.default_branch) && success()) || (github.event_name == 'workflow_dispatch' && github.event.inputs.create_release == 'true')
+    if: github.ref == 'refs/heads/deploy' && github.event_name == 'push'
     steps:
       - name: Check out code
         uses: actions/checkout@v4
